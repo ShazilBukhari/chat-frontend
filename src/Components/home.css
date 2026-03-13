@@ -1,0 +1,121 @@
+/* Navbar */
+
+.navbar{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:18px;
+position:relative;
+}
+
+.heading{
+font-weight:700;
+}
+
+/* Hamburger */
+
+.hamburger{
+position:absolute;
+left:20px;
+padding-top: 20px;
+font-size:30px;
+cursor:pointer;
+}
+
+/* Sidebar */
+
+.sidebar{
+position:fixed;
+left:-260px;
+top:0;
+width:260px;
+height:100%;
+background:#0f172a;
+color:white;
+padding:20px;
+transition:0.3s;
+z-index:1000;
+}
+
+.sidebar.active{
+left:0;
+}
+
+/* Sidebar header */
+
+.sidebar-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.close-btn{
+cursor:pointer;
+font-size:22px;
+}
+
+/* Sidebar menu */
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li link{
+padding:12px 0;
+cursor:pointer;
+transition:0.3s;
+}
+
+.sidebar Link:hover{
+color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+padding:80px 20px;
+}
+
+.hero-text h2{
+font-size:38px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+/* Feature Cards */
+
+.feature-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+}
+
+/* Footer */
+
+.footer{
+margin-top:60px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* Floating Animation */
+
+.floating{
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+}
